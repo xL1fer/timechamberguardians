@@ -90,6 +90,9 @@ function showSlides(n) {
     let slides = document.getElementsByClassName("slide_img");
     let dots = document.getElementsByClassName("dot");
 
+    if (slides.length == 0 || dots.length == 0)
+        return;
+
     if (n > slides.length) slideIndex = 1
     if (n < 1) slideIndex = slides.length
 

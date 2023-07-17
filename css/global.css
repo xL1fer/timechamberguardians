@@ -554,21 +554,21 @@ main button:hover
     border: 1px solid #746b43;
 }
 
-.credits_table
+.table
 {
 	border-collapse: collapse;
 }
-.credits_table td
+.table td
 {
 	padding: 7px 10px;
 	border: 1px solid white;
 	color: white;
 }
-.credits_table td:last-child
+.table td:last-child
 {
 	color: white;
 }
-.credits_table td:first-child
+.table td:first-child
 {
 	color: #746b43;
 }
@@ -681,9 +681,9 @@ main button:hover
 .dot
 {
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
+	height: 12px;
+	width: 12px;
+	margin: 0 6px;
 	/*background-color: #bbb;*/
 	border-radius: 50%;
 	border: 1px solid #746b43;
@@ -703,13 +703,20 @@ main button:hover
 .fade
 {
 	animation-name: fade;
-	animation-duration: 0.5s;
+	animation-duration: 0.8s;
 }
 
 @keyframes fade
 {
 	from { opacity: .4 }
 	to { opacity: 1 }
+}
+
+main .misc
+{
+	color: white;
+	background-color: #24272e;
+	text-align: center;
 }
 
 /* Footer Styles */
