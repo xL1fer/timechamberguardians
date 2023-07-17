@@ -619,10 +619,10 @@ main button:hover
 }
 
 /* hide the images by default */
-/*.slide_img
+.slide_img
 {
 	display: none;
-}*/
+}
 
 /* next & previous buttons */
 .prev, .next
