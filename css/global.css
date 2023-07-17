@@ -64,7 +64,7 @@ ul
 	}
 }
 
-h1, h2, p {
+h1, h2, p, section {
 	color: white;
 }
 
@@ -712,11 +712,12 @@ main button:hover
 	to { opacity: 1 }
 }
 
-main .misc
+main .dev
 {
 	color: white;
-	background-color: #24272e;
 	text-align: center;
+	background-color: #24272e;
+	padding-top: 3%;
 }
 
 /* Footer Styles */
