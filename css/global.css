@@ -38,7 +38,7 @@ strong
 	font-weight: 800;
 }
 
-p, ul, ol, div
+p, ul, ol, div, span
 {
 	line-height: 1.4;
 }
@@ -50,7 +50,7 @@ ul
 
 @media (min-width: 820px)
 {
-	p, ul, ol, div
+	p, ul, ol, div, span
 	{
 		line-height: 1.6;
 	}
@@ -58,7 +58,7 @@ ul
 
 @media (max-width: 820px)
 {
-	p, ul:not(#wide_nav), ol, div
+	p, ul:not(#wide_nav), ol, div, span
 	{
 		font-size: 3.077vw;
 	}
@@ -619,7 +619,7 @@ main button:hover
 }
 
 /* hide the images by default */
-.slide_img
+.slideshow-container:not(:first-child) .slide_img
 {
 	display: none;
 }
