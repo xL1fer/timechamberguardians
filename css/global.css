@@ -619,7 +619,7 @@ main button:hover
 }
 
 /* hide the images by default */
-.slideshow-container:not(:first-child) .slide_img
+.slide_img:not(:first-child)
 {
 	display: none;
 }
