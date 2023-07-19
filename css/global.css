@@ -766,8 +766,8 @@ main .dev
 
 .post_header svg
 {
-	width: 16px;
-	height: 16px;
+	width: 14px;
+	height: 14px;
 }
 
 .post_banner
@@ -795,8 +795,8 @@ main .dev
 
 	.post_header svg
 	{
-		width: 3.077vw;
-		height: 3.077vw;
+		width: 2.377vw;
+		height: 2.377vw;
 	}
 }
 
