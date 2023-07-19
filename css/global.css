@@ -732,13 +732,6 @@ main .dev
 	border-radius: 12px;
 	padding: 12px 18px;
 }
-@media (max-width: 820px)
-{
-	.post
-	{
-		max-width: 100%;
-	}
-}
 
 .post div
 {
@@ -786,6 +779,19 @@ main .dev
 {
 	fill: #746b43;
 	color: #746b43;
+}
+
+@media (max-width: 820px)
+{
+	.post
+	{
+		max-width: 100%;
+	}
+
+	.post_header img
+	{
+		width: 2.1rem;
+	}
 }
 
 /* Footer Styles */
