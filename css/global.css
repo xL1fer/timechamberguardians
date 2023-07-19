@@ -764,6 +764,12 @@ main .dev
 	vertical-align: middle;
 }
 
+.post_header svg
+{
+	width: 16px;
+	height: 16px;
+}
+
 .post_banner
 {
 	text-align: center;
@@ -785,6 +791,12 @@ main .dev
 	.post_header img
 	{
 		width: 2.1rem;
+	}
+
+	.post_header svg
+	{
+		width: 3.077vw;
+		height: 3.077vw;
 	}
 }
 
