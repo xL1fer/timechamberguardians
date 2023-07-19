@@ -775,12 +775,6 @@ main .dev
 	border-radius: 12px;
 }
 
-.post a:hover
-{
-	fill: #746b43;
-	color: #746b43;
-}
-
 @media (max-width: 820px)
 {
 	.post
