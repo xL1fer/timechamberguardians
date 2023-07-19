@@ -55,262 +55,894 @@
             </nav>
         </header>
         <main style="padding-top: 5.9rem;">
-            <section style="padding: 3% 10% 3% 10%; text-align: left;">
-				<span>
-					<h2>SERVER UPDATES:</h2>
-					[07/11/2023] updated played time plugin to enable admins to set both time and score points to players<br>
-					hopefully fixed rank resetting under certain occasions<br>
-					<br>
-					[07/10/2023] fixed shocktrooper monster name always showing 0 health<br>
-					small fix to op4_adm<br>
-					<br>
-					[07/02/2023] improves and fixes to advanced coop informer, chargers modifier, game name changer and monster regen plugins<br>
-					overall revision of remaining plugins <br>
-					<br>
-					[06/30/2023] revised advanced coop informer and ally npc saver plugins<br>
-					merged ba_skin and ba_weapon plugins into ba_overbear<br>
-					<br>
-					[06/29/2023] revised 2Wait plugin code<br>
-					merged safe nickname and admin names plugins into op4 administrator<br>
-					<br>
-					[06/28/2023] adjusted eod_8 changelevel trigger<br>
-					fixed bug where players would revive after being killed<br>
-					<br>
-					[06/27/2023] small adjusts to op4 crash fix code<br>
-					fixed ba_yard4b scientist rosenberg stuck in a scripted sequence<br>
-					<br>
-					[06/25/2023] changed safe nick so that players with bad nicknames simply get their name changed instead of temp ban<br>
-					<br>
-					[06/24/2023] adjust to op4 crash fix plugin to try to fix a small issue where a function tries to access invalid user<br>
-					<br>
-					[06/22/2023] increased chargers juice from 125 to 175<br>
-					revised and improved chrg_chng overall code<br>
-					<br>
-					[04/28/2023] some fixes and improves to player kill command<br>
-					<br>
-					[02/21/2023] added monster_recruit to monster use spam fix group<br>
-					<br>
-					[02/20/2023] finally (HOPEFULLY) fixed CCineMonster (aka scripted_sequence) monster use spam crashes<br>
-					<br>
-					[02/19/2023] ropes player disconnect fix<br>
-					fixed more script related crashes by setting all scripted sequences to non-interruptable<br>
-					added drill sergeant and ally medic grunt to npc's scripted sequence crash fix<br>
-					<br>
-					[02/18/2023] some updates to npc's scripted sequence crash fix (testing)<br>
-					static ropes and death fix updates<br>
-					<br>
-					[02/17/2023] made ropes static again (except for map ofboot3x)<br>
-					<br>
-					[02/15/2023] updated orpheu module<br>
-					removed unecessary function from op4 crash fix<br>
-					<br>
-					[02/14/2023] fixed a bug where when a player died on a rope, the rope's usability was not updated and the rope would stay unusable<br>
-					made ropes move again (testing)<br>
-					fixed of6a5 final boss potential crash where shocktroopers are be removed but their attacks remain in-game<br>
-					<br>
-					[02/10/2023] some more fixes to rpg_rocket and charge_bolt and adjusts to apache and osprey fix in op4 crashfix plugin<br>
-					removed some global names from c2a5, c2a5w and c2a5x<br>
-					updated some ReHLDS files<br>
-					readded map of2a3 (ReHLDS has fixed the bug which made the transition from of2a3 to of2a4 crash the server)<br>
-					made ropes static<br>
-					<br>
-					[02/09/2023] FINALLY fixed certain weapon box drops crashing the server when picked up too fast<br>
-					added rocket fix to op4 crashfix plugin (moved from rocketfix.amxx)<br>
-					a lot of other general identation, comments and code refactor updates to op4 crashfix<br>
-					<br>
-					[02/07/2023] made so that coop informer does not show last map passer when the server itself "passes" the map<br>
-					<br>
-					[02/03/2023] lowered human grunt monstermaker spawn count from infinite to 5 on crisis2<br>
-					changed non steam users time score saving method from STEAM_ID to IP<br>
-					some charging stations changer plugin improvements (testing)<br>
-					<br>
-					[02/02/2023] fixed e0a and e0b sitting scientist model<br>
-					<br>
-					[02/01/2023] fixed schocktrooper health display surpassing 100<br>
-					<br>
-					[01/29/2023] updated chapter name in "We've Got Hostiles" c1a3 maps<br>
-					updated ba_tram3, c1a1c, c1a4f, c3a2e, crisis2, crisis2, halfquake10, it6, it22, nightmare-c1, nightmare-c2, opfor5, opfor7, ret4, ret8 and ss2a2 maps (most of these updates where related to placing teleports in order to aid elevator sections)<br>
-					some updates to monster name, server monster and tar21 plugins<br>
-					<br>
-					[01/26/2023] fixed rg6 view model faulty aiming texture<br>
-					remove unecessary end level triggers from some it maps<br>
-					updated gargantuas trigger condition on shlt14b<br>
-					<br>
-					[01/25/2023] added monster_generic to monsters name plugin (testing)<br>
-					added tentacles and gargantua map sequences<br>
-					<br>
-					[01/24/2023] fixed plasmagun and thunderbolt (and their variants) models' texture bug<br>
-					a bunch of other models fixes and updates<br>
-					testing new variant models for minigun and plasmagun<br>
-					<br>
-					[01/23/2023] fixed potential softlock on map ba_teleport2 caused by globalstate<br>
-					removed globalname from elevator between ba_teleport and ba_power maps<br>
-					<br>
-					[01/22/2023] fixed eod_10 softlock caused by globalstate in eod_11<br>
-					<br>
-					[01/21/2023] fixed c2a5a faulty info_player_start where players got stuck in the pipe<br>
-					also fixed one of halfquake2 player spawnpoint origin<br>
-					<br>
-					[01/17/2023] fixed potential softlock on shl10<br>
-					added gonarch to monsters name plugin<br>
-					removed some unused files<br>
-					<br>
-					[08/28/2022] fixed ofboot4 and nw3 broken scripted sequences<br>
-					<br>
-					[08/22/2022] improved half life intro maps<br>
-					<br>
-					[08/20/2022] fixed minigun secondary model weapon extension<br>
-					fixed and improved a handful of maps<br>
-					<br>
-					[08/18/2022] fixed map dbli sometimes not triggering game_end<br>
-					<br>
-					[08/12/2022] small tweaks to sweet half-life campaign<br>
-					<br>
-					[05/07/2022] added weapon mod chooser plugin (aswell as 5 new option weapons) (:<br>
-					<br>
-					[08/28/2021] small update to op4 time rank plugin<br>
-					<br>
-					[07/03/2021] overall rework and improve in many maps<br>
-					added drill sargeant and recruit to names plugin<br>
-					some other adjusts to other plugins<br>
-					<br>
-					[06/29/2021] added sprite feature at the end map trigger<br>
-					<br>
-					[06/27/2021] fixed some more crashes related to tripmines<br>
-					fixed some wrong animations causing soft locks in particular maps<br>
-					played time plugin is now using user id to store data (testing)<br>
-					<br>
-					[06/09/2021] monster_gonome model fixes<br>
-					<br>
-					[06/01/2021] thunderbolt beam tweaks<br>
-					<br>
-					[05/31/2021] ADDED 3 NEW CAMPAIGNS: HALF-LIFE: C.A.G.E.D ; Retaliation ; Intolerable Threat<br>
-					small adjusts in ally npc saver and op4 crash fix plugins<br>
-					removed gonome guts to prevent server from crashing in certain ocasions<br>
-					some tweaks to 2wait plugin<br>
-					adjusts to shl16 map<br>
-					<br>
-					[02/28/2021] small adjusts to rank plugin<br>
-					testing spawn protection new feature<br>
-					added jetpack spawn to more maps (to help players)<br>
-					<br>
-					[02/27/2021] fixed potential c3a2d changelevel abuse<br>
-					small tweak in grab plugin<br>
-					<br>
-					[02/20/2021] fixed players getting stuck in pushable entities<br>
-					<br>
-					[02/19/2021] added feature "!convert" chat command to convert score points to time points<br>
-					<br>
-					[02/10/2021] crash fix plugin code adjusts and cleaning<br>
-					<br>
-					[02/09/2021] adjusts to ss3a5 and shl2 maps<br>
-					minor changes in admin_names plugin<br>
-					<br>
-					[02/02/2021] fixed crash caused by displacer ball touching some monsters<br>
-					<br>
-					[01/29/2021] added lightning rail variant to thunderbolt plugin<br>
-					<br>
-					[01/27/2021] fixed ks_8 map sometimes not changing level;<br>
-					<br>
-					[01/10/2021] fix to played time plugin, hopefully now the rank doesn't reset anymore<br>
-					<br>
-					[01/09/2021] snarks can now pass through players to prevent potencial stuck<br>
-					fixed some more engineer abuses<br>
-					HOPEFULLY fixed train not spawning in hc2c10<br>
-					<br>
-					[01/08/2021] fixed map in ETC campaign, small tweaks to extra weapons source code, fixed dproto not<br>
-					working properly<br>
-					<br>
-					[01/07/2021] added new cso weapon "Thunderbolt" converted by CoRe@~<br>
-					<br>
-					[01/02/2021] minor adjusts to monster name and map manager plugins<br>
-					<br>
-					[12/24/2020] plasmagun small fix, model reaplacement added for shl, adjusts to<br>
-					op4 crash fix plugin, fixed more missing precache sounds, fixed map ba_canal3 softlock<br>
-					added two new camapaigns: Minimicus and Sweet HALF-LIFE<br>
-					<br>
-					[12/21/2020] fixed lightsaber not displaying in certain occasions<br>
-					small adjusts to minigun, plasmagun and uzi<br>
-					<br>
-					[12/19/2020] some more fixes to scripted sequences<br>
-					minor adjusts in ss3a5<br>
-					<br>
-					[12/12/2020] fixed dblb and dblf cleansuit scientist crashes<br>
-					fixed stationary weapons plugin, adjusts to rocket fix plugin<br>
-					<br>
-					[11/17/2020] removed elevator doors from uplink2 to prevent softlock<br>
-					added monster_otis to npc' doors group fix<br>
-					fixed opfor3 having too much entities<br>
-					<br>
-					[11/16/2020] fixed map force305 crashing with to much entities<br>
-					<br>
-					[11/15/2020] small tweak to door npc's<br>
-					<br>
-					[11/08/2020] fixes related to npcs that interact with doors<br>
-					<br>
-					[11/01/2020] fixed ba_elevator button abuse<br>
-					<br>
-					[10/30/2020] minor updates to monster_regen plugin<br>
-					replaced gauss with egon on ks_8 to prevent map soft lock<br>
-					added jetpack to of2a2 to prevent soft lock<br>
-					<br>
-					[10/29/2020] added inv adm plugin<br>
-					<br>
-					[10/27/2020] uptated "admin_names" plugin<br>
-					<br>
-					[10/25/2020] small uptade to monster regen and npc saver plugins<br>
-					<br>
-					[10/24/2020] added monster regen plugin (new plugin being tested)<br>
-					added "monster_houndeye_dead" to crashfix<br>
-					fixed more lightsaber missing sounds<br>
-					some code rewrite and improves on maps menu plugin<br>
-					<br>
-					[10/17/2020] fixed invincible barney stuck (occurring in of1a5b)<br>
-					<br>
-					[10/15/2020] minor chronecannon update<br>
-					<br>
-					[10/14/2020] small update to ally npcs invincibility (still testing)<br>
-					updated uzi, plasmagun and ac, can now be refilled<br>
-					fixed chronecannon animations<br>
-					<br>
-					[10/07/2020] made all ally npcs invincible (testing)<br>
-					<br>
-					[08/22/2020] fix to lightsaber missing precache sound<br>
-					<br>
-					[07/04/2020] small adjust to ba_security1<br>
-					<br>
-					[07/02/2020] added red skin to lightsaber, default skin to uzi and sc skin to assault cannon(testing :) )<br>
-					added third person camera plugin (say: "/cam")<br>
-					<br>
-					[07/01/2020] fixed possible stuck in gzero2_5<br>
-					fixes related to voltigore attacks and rpg dark smoke<br>
-					<br>
-					[06/26/2020] some weapons skin experiments )<br>
-					<br>
-					[06/25/2020] fixed server not changing to correct campaings<br>
-					fixed force303 scripted sequence vulnerability<br>
-					fixed "SOME" scientist scripted sequence crash<br>
-					<br>
-					[06/20/2020] removed some fire doors from early HALF-LIFE campaign<br>
-					<br>
-					[06/19/2020] rank plugin v1.7<br>
-					added "say /kill" command<br>
-					some adjust to c3a2a<br>
-					<br>
-					<h2>SERVER RULES:</h2>
-					1. Don't kill friendly N.P.C.'s such as Torch Grunt, Medic Grunt,etc ;<br>
-					<br>
-					2. Don't block passages: doorways, ladders, vents,... ;<br>
-					<br>
-					3. Don't abuse the command "rtv" because after a few times, it will become distracting to others ;<br>
-					<br>
-					4. Don't speedrun through maps ;<br>
-					<br>
-					5. Don't troll, anyone trolling will be kicked, or banned;<br>
-					<br>
-					6. There are two exceptions to the rules, rule 1- you may kill N.P.C.'s if we don't need them anymore,<br>
-					rule 4- you may speedrun if you're the only one in the server, or with permission of an admin.<br>
-				</span>
+            <section class="posts" style="padding: 3% 10% 3% 10%; text-align: left;">
+					<div class="post">
+						<div class="post_header">
+							<div><img src="https://media.cdn.community.lambdageneration.com/avatars/1687368102065CgBABtB2XBMDCsDZ.png?size=hex-grid"></div>
+							<div><strong>LambdaGeneration</strong> <a href="https://community.lambdageneration.com/user/lambdageneration" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="1.8vw" height="1.8vh" fill="#746b43"><path d="M 33.40625 0 C 32.855469 0.0507813 32.449219 0.542969 32.5 1.09375 C 32.550781 1.644531 33.042969 2.050781 33.59375 2 L 46.5625 2 L 25.6875 22.90625 C 25.390625 23.148438 25.253906 23.535156 25.339844 23.910156 C 25.425781 24.28125 25.71875 24.574219 26.089844 24.660156 C 26.464844 24.746094 26.851563 24.609375 27.09375 24.3125 L 48 3.4375 L 48 16.40625 C 47.996094 16.765625 48.183594 17.101563 48.496094 17.285156 C 48.808594 17.464844 49.191406 17.464844 49.503906 17.285156 C 49.816406 17.101563 50.003906 16.765625 50 16.40625 L 50 0 L 33.59375 0 C 33.5625 0 33.53125 0 33.5 0 C 33.46875 0 33.4375 0 33.40625 0 Z M 2 10 C 1.476563 10 0.941406 10.183594 0.5625 10.5625 C 0.183594 10.941406 0 11.476563 0 12 L 0 48 C 0 48.523438 0.183594 49.058594 0.5625 49.4375 C 0.941406 49.816406 1.476563 50 2 50 L 38 50 C 38.523438 50 39.058594 49.816406 39.4375 49.4375 C 39.816406 49.058594 40 48.523438 40 48 L 40 18 C 40.003906 17.640625 39.816406 17.304688 39.503906 17.121094 C 39.191406 16.941406 38.808594 16.941406 38.496094 17.121094 C 38.183594 17.304688 37.996094 17.640625 38 18 L 38 48 L 2 48 L 2 12 L 32 12 C 32.359375 12.003906 32.695313 11.816406 32.878906 11.503906 C 33.058594 11.191406 33.058594 10.808594 32.878906 10.496094 C 32.695313 10.183594 32.359375 9.996094 32 10 Z"/></svg></a> · 07/19/2023<br>🡺 Events</div>
+						</div>
+						<div class="post_banner"><a href="https://community.lambdageneration.com/half-life/post/gnbfg4edcbf"><img src="https://media.cdn.community.lambdageneration.com/media-images/1689432914786Yn9DR-DtDlDjDZDw.jpg?size=full"></a></div>
+						<div>
+							"This summer, Half-Life fans around the world will be attempting to break Opposing Force's All Time Peak Steam player count.<br>
+							<br>
+							Get your wrenches ready on August 13 for #OpposingTheBar 🔧🪖🐧"<br>
+							<br>
+							<strong><a style="color: #746b43" href="https://community.lambdageneration.com/half-life/post/gnbfg4edcbf">EXTERNAL LINK</a></strong>
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/11/2023</div>
+						</div>
+						<div>
+							updated played time plugin to enable admins to set both time and score points to players<br>
+							hopefully fixed rank resetting under certain occasions
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/10/2023</div>
+						</div>
+						<div>
+							fixed shocktrooper monster name always showing 0 health<br>
+							small fix to op4_adm
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/02/2023</div>
+						</div>
+						<div>
+							improves and fixes to advanced coop informer, chargers modifier, game name changer and monster regen plugins<br>
+							overall revision of remaining plugins
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/30/2023</div>
+						</div>
+						<div>
+							revised advanced coop informer and ally npc saver plugins<br>
+							merged ba_skin and ba_weapon plugins into ba_overbear
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/29/2023</div>
+						</div>
+						<div>
+							revised 2Wait plugin code<br>
+							merged safe nickname and admin names plugins into op4 administrator
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/28/2023</div>
+						</div>
+						<div>
+							adjusted eod_8 changelevel trigger<br>
+							fixed bug where players would revive after being killed
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/27/2023</div>
+						</div>
+						<div>
+							small adjusts to op4 crash fix code<br>
+							fixed ba_yard4b scientist rosenberg stuck in a scripted sequence
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/25/2023</div>
+						</div>
+						<div>
+							changed safe nick so that players with bad nicknames simply get their name changed instead of temp ban
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/24/2023</div>
+						</div>
+						<div>
+							adjust to op4 crash fix plugin to try to fix a small issue where a function tries to access invalid user
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/22/2023</div>
+						</div>
+						<div>
+							increased chargers juice from 125 to 175<br>
+							revised and improved chrg_chng overall code
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 04/28/2023</div>
+						</div>
+						<div>
+							some fixes and improves to player kill command
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/21/2023</div>
+						</div>
+						<div>
+							added monster_recruit to monster use spam fix group
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/20/2023</div>
+						</div>
+						<div>
+							finally (HOPEFULLY) fixed CCineMonster (aka scripted_sequence) monster use spam crashes
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/19/2023</div>
+						</div>
+						<div>
+							ropes player disconnect fix<br>
+							fixed more script related crashes by setting all scripted sequences to non-interruptable<br>
+							added drill sergeant and ally medic grunt to npc's scripted sequence crash fix
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/18/2023</div>
+						</div>
+						<div>
+							some updates to npc's scripted sequence crash fix (testing)<br>
+							static ropes and death fix updates
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/17/2023</div>
+						</div>
+						<div>
+							made ropes static again (except for map ofboot3x)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/15/2023</div>
+						</div>
+						<div>
+							updated orpheu module<br>
+							removed unecessary function from op4 crash fix
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/14/2023</div>
+						</div>
+						<div>
+							fixed a bug where when a player died on a rope, the rope's usability was not updated and the rope would stay unusable<br>
+							made ropes move again (testing)<br>
+							fixed of6a5 final boss potential crash where shocktroopers are be removed but their attacks remain in-game
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/10/2023</div>
+						</div>
+						<div>
+							some more fixes to rpg_rocket and charge_bolt and adjusts to apache and osprey fix in op4 crashfix plugin<br>
+							removed some global names from c2a5, c2a5w and c2a5x<br>
+							updated some ReHLDS files<br>
+							readded map of2a3 (ReHLDS has fixed the bug which made the transition from of2a3 to of2a4 crash the server)<br>
+							made ropes static
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/09/2023</div>
+						</div>
+						<div>
+							FINALLY fixed certain weapon box drops crashing the server when picked up too fast<br>
+							added rocket fix to op4 crashfix plugin (moved from rocketfix.amxx)<br>
+							a lot of other general identation, comments and code refactor updates to op4 crashfix
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/07/2023</div>
+						</div>
+						<div>
+							made so that coop informer does not show last map passer when the server itself "passes" the map<br>
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/03/2023</div>
+						</div>
+						<div>
+							lowered human grunt monstermaker spawn count from infinite to 5 on crisis2<br>
+							changed non steam users time score saving method from STEAM_ID to IP<br>
+							some charging stations changer plugin improvements (testing)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/02/2023</div>
+						</div>
+						<div>
+							fixed e0a and e0b sitting scientist model
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/01/2023</div>
+						</div>
+						<div>
+							fixed schocktrooper health display surpassing 100
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/29/2023</div>
+						</div>
+						<div>
+							updated chapter name in "We've Got Hostiles" c1a3 maps<br>
+							updated ba_tram3, c1a1c, c1a4f, c3a2e, crisis2, crisis2, halfquake10, it6, it22, nightmare-c1, nightmare-c2, opfor5, opfor7, ret4, ret8 and ss2a2 maps (most of these updates where related to placing teleports in order to aid elevator sections)<br>
+							some updates to monster name, server monster and tar21 plugins
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/26/2023</div>
+						</div>
+						<div>
+							fixed rg6 view model faulty aiming texture<br>
+							remove unecessary end level triggers from some it maps<br>
+							updated gargantuas trigger condition on shlt14b
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/25/2023</div>
+						</div>
+						<div>
+							added monster_generic to monsters name plugin (testing)<br>
+							added tentacles and gargantua map sequences
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/24/2023</div>
+						</div>
+						<div>
+							fixed plasmagun and thunderbolt (and their variants) models' texture bug<br>
+							a bunch of other models fixes and updates<br>
+							testing new variant models for minigun and plasmagun
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/23/2023</div>
+						</div>
+						<div>
+							fixed potential softlock on map ba_teleport2 caused by globalstate<br>
+							removed globalname from elevator between ba_teleport and ba_power maps
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/22/2023</div>
+						</div>
+						<div>
+							fixed eod_10 softlock caused by globalstate in eod_11
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/21/2023</div>
+						</div>
+						<div>
+							fixed c2a5a faulty info_player_start where players got stuck in the pipe<br>
+							also fixed one of halfquake2 player spawnpoint origin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/17/2023</div>
+						</div>
+						<div>
+							fixed potential softlock on shl10<br>
+							added gonarch to monsters name plugin<br>
+							removed some unused files
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/28/2022</div>
+						</div>
+						<div>
+							fixed ofboot4 and nw3 broken scripted sequences
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/22/2022</div>
+						</div>
+						<div>
+							improved half life intro maps
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/20/2022</div>
+						</div>
+						<div>
+							fixed minigun secondary model weapon extension<br>
+							fixed and improved a handful of maps
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/18/2022</div>
+						</div>
+						<div>
+							fixed map dbli sometimes not triggering game_end
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/12/2022</div>
+						</div>
+						<div>
+							small tweaks to sweet half-life campaign
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 05/07/2022</div>
+						</div>
+						<div>
+							added weapon mod chooser plugin (aswell as 5 new option weapons) (:
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/28/2021</div>
+						</div>
+						<div>
+							small update to op4 time rank plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/03/2021</div>
+						</div>
+						<div>
+							overall rework and improve in many maps<br>
+							added drill sargeant and recruit to names plugin<br>
+							some other adjusts to other plugins
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/29/2021</div>
+						</div>
+						<div>
+							added sprite feature at the end map trigger
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/27/2021</div>
+						</div>
+						<div>
+							fixed some more crashes related to tripmines<br>
+							fixed some wrong animations causing soft locks in particular maps<br>
+							played time plugin is now using user id to store data (testing)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/09/2021</div>
+						</div>
+						<div>
+							monster_gonome model fixes
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/01/2021</div>
+						</div>
+						<div>
+							thunderbolt beam tweaks
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 05/31/2021</div>
+						</div>
+						<div>
+							ADDED 3 NEW CAMPAIGNS: HALF-LIFE: C.A.G.E.D ; Retaliation ; Intolerable Threat<br>
+							small adjusts in ally npc saver and op4 crash fix plugins<br>
+							removed gonome guts to prevent server from crashing in certain ocasions<br>
+							some tweaks to 2wait plugin<br>
+							adjusts to shl16 map
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/28/2021</div>
+						</div>
+						<div>
+							small adjusts to rank plugin<br>
+							testing spawn protection new feature<br>
+							added jetpack spawn to more maps (to help players)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/27/2021</div>
+						</div>
+						<div>
+							fixed potential c3a2d changelevel abuse<br>
+							small tweak in grab plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/20/2021</div>
+						</div>
+						<div>
+							fixed players getting stuck in pushable entities
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/19/2021</div>
+						</div>
+						<div>
+							added feature "!convert" chat command to convert score points to time points
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/10/2021</div>
+						</div>
+						<div>
+							crash fix plugin code adjusts and cleaning
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/09/2021</div>
+						</div>
+						<div>
+							adjusts to ss3a5 and shl2 maps<br>
+							minor changes in admin_names plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 02/02/2021</div>
+						</div>
+						<div>
+							fixed crash caused by displacer ball touching some monsters
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/29/2021</div>
+						</div>
+						<div>
+							added lightning rail variant to thunderbolt plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/27/2021</div>
+						</div>
+						<div>
+							fixed ks_8 map sometimes not changing level;
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/10/2021</div>
+						</div>
+						<div>
+							fix to played time plugin, hopefully now the rank doesn't reset anymore
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/09/2021</div>
+						</div>
+						<div>
+							snarks can now pass through players to prevent potencial stuck<br>
+							fixed some more engineer abuses<br>
+							HOPEFULLY fixed train not spawning in hc2c10
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/08/2021</div>
+						</div>
+						<div>
+							fixed map in ETC campaign, small tweaks to extra weapons source code, fixed dproto not<br>
+							working properly
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/07/2021</div>
+						</div>
+						<div>
+							added new cso weapon "Thunderbolt" converted by CoRe@~
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 01/02/2021</div>
+						</div>
+						<div>
+							minor adjusts to monster name and map manager plugins
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 12/24/2020</div>
+						</div>
+						<div>
+							plasmagun small fix, model reaplacement added for shl, adjusts to<br>
+							op4 crash fix plugin, fixed more missing precache sounds, fixed map ba_canal3 softlock<br>
+							added two new camapaigns: Minimicus and Sweet HALF-LIFE
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 12/21/2020</div>
+						</div>
+						<div>
+							fixed lightsaber not displaying in certain occasions<br>
+							small adjusts to minigun, plasmagun and uzi
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 12/19/2020</div>
+						</div>
+						<div>
+							some more fixes to scripted sequences<br>
+							minor adjusts in ss3a5
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 12/12/2020</div>
+						</div>
+						<div>
+							fixed dblb and dblf cleansuit scientist crashes<br>
+							fixed stationary weapons plugin, adjusts to rocket fix plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 11/17/2020</div>
+						</div>
+						<div>
+							removed elevator doors from uplink2 to prevent softlock<br>
+							added monster_otis to npc' doors group fix<br>
+							fixed opfor3 having too much entities
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 11/16/2020</div>
+						</div>
+						<div>
+							fixed map force305 crashing with to much entities
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 11/15/2020</div>
+						</div>
+						<div>
+							small tweak to door npc's
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 11/08/2020</div>
+						</div>
+						<div>
+							fixes related to npcs that interact with doors
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 11/01/2020</div>
+						</div>
+						<div>
+							fixed ba_elevator button abuse
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/30/2020</div>
+						</div>
+						<div>
+							minor updates to monster_regen plugin<br>
+							replaced gauss with egon on ks_8 to prevent map soft lock<br>
+							added jetpack to of2a2 to prevent soft lock
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/29/2020</div>
+						</div>
+						<div>
+							added inv adm plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/27/2020</div>
+						</div>
+						<div>
+							uptated "admin_names" plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/25/2020</div>
+						</div>
+						<div>
+							small uptade to monster regen and npc saver plugins
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/24/2020</div>
+						</div>
+						<div>
+							added monster regen plugin (new plugin being tested)<br>
+							added "monster_houndeye_dead" to crashfix<br>
+							fixed more lightsaber missing sounds<br>
+							some code rewrite and improves on maps menu plugin
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/17/2020</div>
+						</div>
+						<div>
+							fixed invincible barney stuck (occurring in of1a5b)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/15/2020</div>
+						</div>
+						<div>
+							minor chronecannon update
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/14/2020</div>
+						</div>
+						<div>
+							small update to ally npcs invincibility (still testing)<br>
+							updated uzi, plasmagun and ac, can now be refilled<br>
+							fixed chronecannon animations
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 10/07/2020</div>
+						</div>
+						<div>
+							made all ally npcs invincible (testing)
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/22/2020</div>
+						</div>
+						<div>
+							fix to lightsaber missing precache sound
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 08/22/2020</div>
+						</div>
+						<div>
+							fix to lightsaber missing precache sound
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/04/2020</div>
+						</div>
+						<div>
+							small adjust to ba_security1
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/02/2020</div>
+						</div>
+						<div>
+							added red skin to lightsaber, default skin to uzi and sc skin to assault cannon(testing :) )<br>
+							added third person camera plugin (say: "/cam")
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 07/01/2020</div>
+						</div>
+						<div>
+							fixed possible stuck in gzero2_5<br>
+							fixes related to voltigore attacks and rpg dark smoke
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/26/2020</div>
+						</div>
+						<div>
+							some weapons skin experiments )
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/25/2020</div>
+						</div>
+						<div>
+							fixed server not changing to correct campaings<br>
+							fixed force303 scripted sequence vulnerability<br>
+							fixed "SOME" scientist scripted sequence crash
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/20/2020</div>
+						</div>
+						<div>
+							removed some fire doors from early HALF-LIFE campaign
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/19/2020</div>
+						</div>
+						<div>
+							rank plugin v1.7<br>
+							added "say /kill" command<br>
+							some adjust to c3a2a
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Rules</strong> · 02/04/2018</div>
+						</div>
+						<div>
+							1. Don't kill friendly N.P.C.'s such as Torch Grunt, Medic Grunt,etc ;<br>
+							<br>
+							2. Don't block passages: doorways, ladders, vents,... ;<br>
+							<br>
+							3. Don't abuse the command "rtv" because after a few times, it will become distracting to others ;<br>
+							<br>
+							4. Don't speedrun through maps ;<br>
+							<br>
+							5. Don't troll, anyone trolling will be kicked, or banned;<br>
+							<br>
+							6. There are two exceptions to the rules, rule 1- you may kill N.P.C.'s if we don't need them anymore,<br>
+							rule 4- you may speedrun if you're the only one in the server, or with permission of an admin.
+						</div>
+					</div>
+					<div class="post">
+						<div class="post_header">
+							<div><img src="../resources/lambda.png"></div>
+							<div><strong>Server Updates</strong> · 06/22/2016</div>
+						</div>
+						<div class="post_banner"><img src="https://cdn.akamai.steamstatic.com/steam/apps/50/0000000158.1920x1080.jpg?t=1579628243"></div>
+						<div>
+							server started development
+						</div>
+					</div>
             </section>
 			<section class="dev">
                 <h2>Website developed by CoRe@~</h2>
